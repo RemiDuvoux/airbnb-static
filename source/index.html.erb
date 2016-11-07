@@ -1,10 +1,92 @@
----
-title: Le Wagon Middleman boilerplate
----
+    <!-- Your banner code -->
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
+      <div class="banner-content">
+        <h1>WELCOME HOME</h1>
+        <p>Rent unique places to stay from local hosts in 190+ countries.</p>
+        <%= link_to "GET IT", "#", class: "btn btn-primary" %>
+      </div>
+    </div>
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
+    <!-- Your features code -->
+    <div class="text-center padded features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= image_tag "images/beer.png" %>
+            <h2>Meet people</h2>
+            <p>The earth is your new home.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+           <%= image_tag "images/globe.png" %>
+            <h2>Discover the world</h2>
+            <p>Discover new culture and lifestyle.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+           <%= image_tag "images/heart.png" %>
+            <h2>Share and love</h2>
+            <p>No cash issues anymore.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+           <%= image_tag "images/dollar.png" %>
+            <h2>Pay online</h2>
+            <p>Join a community you will love.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-grey padded">
+      <h2 class="text-center">Your next trip</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+            <div class="card-category">Popular</div>
+              <div class="card-description">
+                <h2>Some stuff</h2>
+                <p>Very cool stuff, useful and smart</p>
+              </div>
+              <%= image_tag "images/seb.jpg", class:"card-user avatar" %>
+              <%= link_to "", "#", class:"card-link"%>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2>Some stuff</h2>
+              <p>Very cool stuff, useful and smart</p>
+            </div>
+              <%= image_tag "images/romain.jpeg", class:"card-user avatar" %>
+              <%= link_to "", "#", class:"card-link" %>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+            <div class="card-category">Popular</div>
+            <div class="card-description">
+              <h2>Some stuff</h2>
+              <p>Very cool stuff, useful and smart</p>
+            </div>
+              <%= image_tag "images/anne.jpg", class:"card-user avatar" %>
+              <%= link_to "", "#", class:"card-link" %>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Your newsletter code -->
+  <form action="#" class="form-inline text-center padded">
+  <h2 class="text-center">Let's get in touch!</h2>
+  <p>Leave us your mail and get news from us</p>
+  <label for="email">Email</label>
+  <input type="email" class="form-control" id="email">
+  <input type="submit" value="Subscribe" class="btn btn-primary">
+  </form>
+
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+
+

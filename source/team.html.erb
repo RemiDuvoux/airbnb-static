@@ -1,0 +1,11 @@
+<ul class="list-inline text-center">
+
+  <% %w(sevan remi).each do |member| %>
+    <li>
+      <ul class="text-center" style="list-style: none">
+        <li style="font-weight: bolder ; padding: 30px"><%= member.capitalize %></li>
+        <li><%= image_tag "#{member}.jpg", class: "img-circle" %></li>
+      </ul>
+    </li>
+  <% end %>
+</ul>
